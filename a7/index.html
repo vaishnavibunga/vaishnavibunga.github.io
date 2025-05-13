@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a" placeholder=" ">
+    <input type="text" id="b" placeholder=" ">
+    <button onclick="submit()">submit</button>
+<hr>
+<div id="result">
+    <p id="add">addition:</p>
+        <p id="sub">subtraction:</p>
+            <p id="div">division:</p>
+                <p id="mul">multiply:</p>
+
+</div>
+<script>
+    function submit(){
+        const n1=document.getElementById('a').value;
+        const n2=document.getElementById('b').value;
+        document.getElementById('add').innerText="Addition"+(n1+n2);
+         document.getElementById('sub').innerText="subtraction"+(n1-n2);
+          document.getElementById('mul').innerText="multiplication"+(n1*n2);
+           document.getElementById('div').innerText="division"+(n1/n2);
+
+    }
+</script>
+</body>
+</html>
