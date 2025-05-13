@@ -1,4 +1,4 @@
-.class{
+.main{
     display:flex;
 justify-content:centre;
 
@@ -8,4 +8,7 @@ justify-content:centre;
     }
     #bb{
         border:2;
+    }
+    #result{
+        border:5;
     }
