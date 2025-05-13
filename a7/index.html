@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="a" placeholder=" ">
-    <input type="text" id="b" placeholder=" ">
+    <input type="text" id="aa" placeholder=" ">
+    <input type="text" id="bb" placeholder=" ">
     <button onclick="submit()">submit</button>
 <hr>
 <div id="result">
@@ -18,13 +18,33 @@
 
 </div>
 <script>
-    function submit(){
-        const n1=document.getElementById('a').value;
-        const n2=document.getElementById('b').value;
-        document.getElementById('add').innerText="Addition"+(n1+n2);
-         document.getElementById('sub').innerText="subtraction"+(n1-n2);
-          document.getElementById('mul').innerText="multiplication"+(n1*n2);
-           document.getElementById('div').innerText="division"+(n1/n2);
+    const addi= () =>{
+        return a+b;
+    }
+     const subi= () =>{
+        return a-b;
+    }
+     const muli= () =>{
+        return a*b;
+    }
+     const divi= () =>{
+        return a/b;
+    }
+
+    const submit= () =>{
+        const a=parseFloat(document.getElementById('aa').value);
+        const b=parseFloat(document.getElementById('bb').value);
+        r1=addi(a,b);
+        r2=subi(a,b);
+        r3=divi(a,b);
+        r4=muli(a,b);
+
+
+        document.getElementById('add').innerText=r1;
+        document.getElementById('sub').innerText=r2;
+        document.getElementById('div').innerText=r3;
+        document.getElementById('mul').innerText=r4;
+       
 
     }
 </script>
