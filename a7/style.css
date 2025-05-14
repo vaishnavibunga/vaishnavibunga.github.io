@@ -1,14 +1,23 @@
-.main{
-    display:flex;
-justify-content:centre;
+.row {
+    display: flex;
+    justify-content: center;
 
-    }
-    #aa{
-        border:2;
-    }
-    #bb{
-        border:2;
-    }
-    #result{
-        border:5;
-    }
+}
+
+.row div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px
+}
+
+#resultDiv {
+    position: fixed;
+    background-color: red;
+    left: 100%;
+    /* display:none; */
+    transition: left .5s
+}
+
+#resultDiv:hover {
+    background-color: orange;
+}

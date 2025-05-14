@@ -1,61 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link rel="Stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main">
-        <div id="input">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Calculator</h1>
+
+    <div class="row">
+      <div>
         <p>
-    <input type="text" id="aa" placeholder=" ">
-    </p>
-    
-    <p>
-    <input type="text" id="bb" placeholder=" "></p>
-   <p> <button onclick="submit()">submit</button></p>
-</div>
-<div id="result">
-    <p id="add">addition:</p>
-        <p id="sub">subtraction:</p>
-            <p id="div">division:</p>
-                <p id="mul">multiply:</p>
-
-</div>
-</div>
-<script>
-    const addi= (a,b) =>{
-        return a+b;
-    }
-     const subi= (a,b) =>{
-        return a-b;
-    }
-     const muli= (a,b) =>{
-        return a*b;
-    }
-     const divi= (a,b) =>{
-        return a/b;
-    }
-
-    const submit= () =>{
-        const a=parseFloat(document.getElementById('aa').value);
-        const b=parseFloat(document.getElementById('bb').value);
-       const r1=addi(a,b);
-       const r2=subi(a,b);
-       const r3=divi(a,b);
-       const r4=muli(a,b);
-
-
-        document.getElementById('add').innerText=r1;
-        document.getElementById('sub').innerText=r2;
-        document.getElementById('div').innerText=r3;
-        document.getElementById('mul').innerText=r4;
-       
-
-    }
-</script>
-
-</body>
+          <input type="number" id="n1" />
+        </p>
+        <p><input type="number" id="n2" /></p>
+        <button onclick="calc()">Calculate</button>
+        <button onclick="dispResult()">Show Result</button>
+        <button onclick="hideResult()">Hide Result</button>
+      </div>
+      <div id="resultDiv">
+        <p id="dvAdd"></p>
+        <p id="dvSubtract"></p>
+        <p id="dvMultiply"></p>
+        <p id="dvDivide"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
