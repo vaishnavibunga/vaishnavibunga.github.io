@@ -1,29 +1,27 @@
-const add = (a, b) => {
-      let a = parseFloat(document.getElementById("n1").value);
-    let b = parseFloat(document.getElementById("n2").value);
-     dvAdd.innerHTML = "Addition: " + (a+b);
-    
-    
-  };
-  
-  const sub = (a, b) => {
-    let a = parseFloat(document.getElementById("n1").value);
-    let b = parseFloat(document.getElementById("n2").value);
-     dvSub.innerHTML = "subtraction: " + (a-b);
-    return a - b;
-  };
-  
-  const mul = (a, b) => {
-        let a = parseFloat(document.getElementById("n1").value);
-    let b = parseFloat(document.getElementById("n2").value);
-     dvMul.innerHTML = "multiplication: " + (a*b);
-    return a * b;
-  };
-  
-  const div = (a, b) => {
-      let a = parseFloat(document.getElementById("n1").value);
-    let b = parseFloat(document.getElementById("n2").value);
-     dvDiv.innerHTML = "division: " + (a/b);
-    return a / b;
-  };
-  
+const add = () => {
+  const a = parseFloat(document.getElementById("n1").value);
+  const b = parseFloat(document.getElementById("n2").value);
+  document.getElementById("dvAdd").innerHTML = "Addition: " + (a + b);
+};
+
+const sub = () => {
+  const a = parseFloat(document.getElementById("n1").value);
+  const b = parseFloat(document.getElementById("n2").value);
+  document.getElementById("dvSub").innerHTML = "Subtraction: " + (a - b);
+};
+
+const mul = () => {
+  const a = parseFloat(document.getElementById("n1").value);
+  const b = parseFloat(document.getElementById("n2").value);
+  document.getElementById("dvMul").innerHTML = "Multiplication: " + (a * b);
+};
+
+const div = () => {
+  const a = parseFloat(document.getElementById("n1").value);
+  const b = parseFloat(document.getElementById("n2").value);
+  if (b === 0) {
+    document.getElementById("dvDiv").innerHTML = "Division: Cannot divide by zero";
+  } else {
+    document.getElementById("dvDiv").innerHTML = "Division: " + (a / b);
+  }
+};
