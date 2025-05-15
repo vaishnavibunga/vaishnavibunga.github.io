@@ -105,6 +105,9 @@ body {
     flex-wrap: wrap;
     transition: transform 0.5s;
 }
+#1{
+    display:flex;
+}
 
 .project-card {
     background-color: white;
@@ -114,7 +117,7 @@ body {
     width: 250px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    
+
 }
 
 .project-card h3 {
