@@ -3,5 +3,5 @@ const products=[
     {id:2,name:orange ,price:5},
     {id:3,name:mangp ,price:9},
 ]
-    const element= products.map((x) => x.name+5);
+    const element= products.map((x) => x.price+5);
 console.log(element);
