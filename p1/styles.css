@@ -105,10 +105,10 @@ body {
     flex-wrap: wrap;
     transition: transform 0.5s;
 }
-#1{
+
+#fim{
     display:flex;
 }
-
 .project-card {
     background-color: white;
     border: 2px solid black;
